@@ -7,6 +7,8 @@ import AllIps from './Ips'
 import PingIp from './PingIP'
 import UpdateIps from './UpdateIps'
 
+
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -20,14 +22,6 @@ function App() {
         <Route path="/ping" element={<PingIp />}></Route>
       </Routes>
       </BrowserRouter>
-      <div className="categories-box">
-        <h2>Categories</h2>
-        <ul>
-          <li>Category 1</li>
-          <li>Category 2</li>
-          <li>Category 3</li>
-        </ul>
-      </div>
     </div>
   )
 }
