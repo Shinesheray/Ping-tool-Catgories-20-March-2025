@@ -1,0 +1,33 @@
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .category-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    flex: 1 1 100%; /* Full width */
+    box-sizing: border-box;
+  }
+  
+  .category-section h3 {
+    margin-top: 0;
+  }
+  
+  .category-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .category-section ul li {
+    padding: 5px 0;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px; /* Adjust the gap as needed */
+  }
