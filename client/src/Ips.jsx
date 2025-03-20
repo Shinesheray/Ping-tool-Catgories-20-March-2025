@@ -109,7 +109,7 @@ function AllIps() {
                                         </span>
                                     </td>
                                     <td>{new Date(ipAddresse.timestamp).toLocaleString()}</td>
-                                    <td>
+                                    <td className="button-group">
                                         <Link to={`/update/${ipAddresse._id}`} className="btn btn-success btn-sm">
                                             Update
                                         </Link>
@@ -136,7 +136,7 @@ function AllIps() {
     };
 
     return (
-        <div className="d-flex flex-column vh-100 bg-primary justify-content-center align-items-center">
+        <div className="container">
             <div className='w-100 bg-white rounded p-3'>
                 <Link to="/create" className="btn btn-success mb-3">Add New IP +</Link>
                 <button className="btn btn-danger mb-3" onClick={handlePing}>Ping All</button>
