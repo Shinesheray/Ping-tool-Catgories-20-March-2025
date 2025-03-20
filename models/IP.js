@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const ipSchema = new mongoose.Schema({
+const IPSchema = new mongoose.Schema({
     ipAddress: { type: String, required: true, unique: true },
     name: { type: String, required: true },
     status: { type: Boolean, required: true },
@@ -9,4 +9,7 @@ const ipSchema = new mongoose.Schema({
     category: { type: String, required: true } // Add category field to know which it is that we dealing with
 });
 
-module.exports = mongoose.model('IpAdresses_2_TestingDB', ipSchema);
+// Create the IP model using the defined schema
+const IPAddress = mongoose.model('IPAddress', IPSchema);
+
+module.exports = IPAddress;
